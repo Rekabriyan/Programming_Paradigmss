@@ -29,3 +29,17 @@ while($numbers >= 0){
 
     $numbers = $numbers - 1;
 }
+
+#Array loop
+print "\n\n========ARRAY LOOP========\n";
+my @array = ("James Bond 007", "Departement of Statistics", "University of Oxford", "Fantastic 4");
+
+for(my $i=0; $i <= $#array; $i++){
+    if(@array[$i] =~ /[0-9]/){
+        print "@array[$i]\n";
+    }
+    else{
+        my $uppercase = uc(@array[$i]);
+        print "$uppercase\n"; 
+    }
+}
